@@ -25,5 +25,9 @@ Water quads in GTAV work in a very odd way and sometimes changes made to water q
 - Press `Ctrl+A` > `Apply All Transforms`
 - Press Export button to export with all the changes
 
+## CREDITS
+- [Sollumz](https://github.com/Skylumz/Sollumz) for its XML parser
+- [Alebalweb Blog](https://www.alebalweb-blog.com/22-tutorial-add-modify-water-in-gta-5-water-xml.html) for its documented research on water.xml
+
 **If you liked this addon, consider supporting me:**
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z6BVZ09)
