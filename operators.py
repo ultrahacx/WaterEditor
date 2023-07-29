@@ -263,10 +263,10 @@ def create_waterQuad_xml(object) -> WaterQuads:
     obj_min_xy = obj_minmax[0]
     obj_max_xy = obj_minmax[1]
     quad_object_xml = WaterQuads()
-    quad_object_xml.minX = obj_min_xy[0]
-    quad_object_xml.maxX = obj_max_xy[0]
-    quad_object_xml.minY = obj_min_xy[1]
-    quad_object_xml.maxY = obj_max_xy[1]
+    quad_object_xml.minX = round(obj_min_xy[0])
+    quad_object_xml.maxX = round(obj_max_xy[0])
+    quad_object_xml.minY = round(obj_min_xy[1])
+    quad_object_xml.maxY = round(obj_max_xy[1])
     quad_object_xml.type = object.waterProperties.water_type
 
     is_inv_str = str(object.waterProperties.water_is_invisible)
@@ -297,10 +297,10 @@ def create_calmingQuad_xml(object) -> CalmingQuads:
     obj_min_xy = obj_minmax[0]
     obj_max_xy = obj_minmax[1]
     quad_object_xml = CalmingQuads()
-    quad_object_xml.minX = obj_min_xy[0]
-    quad_object_xml.maxX = obj_max_xy[0]
-    quad_object_xml.minY = obj_min_xy[1]
-    quad_object_xml.maxY = obj_max_xy[1]
+    quad_object_xml.minX = round(obj_min_xy[0])
+    quad_object_xml.maxX = round(obj_max_xy[0])
+    quad_object_xml.minY = round(obj_min_xy[1])
+    quad_object_xml.maxY = round(obj_max_xy[1])
     quad_object_xml.fDampening = object.waterProperties.water_fDampening
     return quad_object_xml
 
@@ -310,10 +310,10 @@ def create_waveQuad_xml(object) -> WaveQuads:
     obj_min_xy = obj_minmax[0]
     obj_max_xy = obj_minmax[1]
     quad_object_xml = WaveQuads()
-    quad_object_xml.minX = obj_min_xy[0]
-    quad_object_xml.maxX = obj_max_xy[0]
-    quad_object_xml.minY = obj_min_xy[1]
-    quad_object_xml.maxY = obj_max_xy[1]
+    quad_object_xml.minX = round(obj_min_xy[0])
+    quad_object_xml.maxX = round(obj_max_xy[0])
+    quad_object_xml.minY = round(obj_min_xy[1])
+    quad_object_xml.maxY = round(obj_max_xy[1])
     quad_object_xml.amplitude = object.waterProperties.water_amplitude
     quad_object_xml.x_direction = object.waterProperties.water_xDirection
     quad_object_xml.y_direction = object.waterProperties.water_yDirection
