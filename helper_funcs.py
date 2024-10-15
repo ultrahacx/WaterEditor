@@ -41,3 +41,7 @@ def quad_min_max(quad_obj):
     max_xy = max(all_vert, key=lambda x: (x[0], x[1]))
 
     return (min_xy, max_xy)
+
+
+def round_to_even(value):
+    return round(value / 2) * 2
