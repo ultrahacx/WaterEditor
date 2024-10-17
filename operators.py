@@ -267,7 +267,7 @@ def create_waterQuad_xml(object) -> WaterQuads:
     quad_object_xml.maxX = round_to_even(obj_max_xy[0])
     quad_object_xml.minY = round_to_even(obj_min_xy[1])
     quad_object_xml.maxY = round_to_even(obj_max_xy[1])
-    quad_object_xml.type = object.waterProperties.water_type
+    quad_object_xml.water_type = object.waterProperties.water_type
 
     is_inv_str = str(object.waterProperties.water_is_invisible)
     quad_object_xml.is_invisible = is_inv_str[0].lower() + is_inv_str[1:]
